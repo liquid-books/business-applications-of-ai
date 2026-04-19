@@ -547,6 +547,40 @@ The lesson is not to discount your services. The lesson is to be unflinchingly h
 
 ---
 
+## Faith Integration — Module 9
+
+> *"Then you will know the truth, and the truth will set you free."*
+> — John 8:32 (NIV)
+
+### The Collapse of Asymmetry as a Form of Liberation
+
+John 8:32 is one of the most quoted verses in Christian culture — and one of the most underestimated. Jesus is speaking about spiritual liberation through knowledge of himself. But the principle resonates across domains, including economics: systems built on the weaponization of ignorance are systems of bondage, and their unraveling is, in an important sense, a form of freedom.
+
+Information asymmetry — the structural gap between what sellers know and what buyers know — has historically served as a profit mechanism for professional intermediaries. The car dealer who knows the invoice price. The doctor who controls the diagnosis. The lawyer who understands the contract. The financial advisor who comprehends the fee structure. These asymmetries were not always malicious, but they were often self-serving — and they imposed real costs on the less-informed party.
+
+AI is collapsing these asymmetries with extraordinary speed. The patient who comes to an appointment with a Gemini-assisted summary of their condition. The homebuyer who has run their own comparable-sales analysis. The small business owner who generated their own contract using Claude. This is not a threat to professional services — it is a redistribution of power toward people who previously had none.
+
+A Christian understanding of this moment is not triumphalist. The collapse of asymmetry creates dislocation, uncertainty, and genuine hardship for people whose careers were built on information advantages that no longer hold. But it also creates the possibility of something the old system often couldn't: **a fair deal**. And a fair deal, for a follower of the God who declared himself the Truth, is something worth building toward.
+
+---
+
+### ✍️ Faith Integration Paper — Module 9
+
+**Assignment:** Using Claude or Gemini as a co-writer, compose a **1-page reflection paper** (approximately 300–400 words) responding to the following prompt:
+
+> *John 8:32 promises that truth brings freedom. The collapse of information asymmetry is, in some sense, a liberation movement — transferring knowledge and power from intermediaries to individuals. Reflect on the professional field you are entering or currently working in. What information asymmetries have historically existed in that field? Who benefited from them? Who was harmed? As AI collapses those asymmetries, what is the Christian business professional's responsibility — to the disrupted intermediaries, to the newly empowered consumers, and to the design of whatever comes next?*
+
+**Process:**
+1. Co-draft with Claude or Gemini, drawing on your specific professional background.
+2. Revise with your own perspective on the field you know best.
+3. Submit the human-owned version.
+
+**Format:** 1 page, double-spaced, 12pt font, Times New Roman. Include John 8:32 at the top.
+
+**Grading:** Theological engagement, analytical depth about your specific field, personal honesty about the disruption you may face or cause.
+
+---
+
 ## Lab 9: The Post-Asymmetry Business Plan
 
 :::{important}

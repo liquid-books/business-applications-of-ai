@@ -454,6 +454,40 @@ In 2022, Adobe announced an agreement to acquire Figma for approximately $20 bil
 
 ---
 
+## Faith Integration — Module 4
+
+> *"Suppose one of you wants to build a tower. Won't you first sit down and estimate the cost to see if you have enough money to complete it?"*
+> — Luke 14:28 (NIV)
+
+### The Theology of Counting the Cost
+
+Jesus told this parable not to teach business strategy, but to warn his followers about the cost of discipleship. Yet he reached for a financial metaphor — sitting down to estimate the cost before building — precisely because he understood that his audience knew what it meant to commit to something you cannot finish. The unfinished tower is not just an embarrassment; it is a failure of responsibility to everyone who believed in the project.
+
+Unit economics is the discipline of counting the cost before you build. It is the financial equivalent of intellectual honesty: How much does it actually cost to acquire a customer? How much do they actually generate over their lifetime? What does the math say about whether this business can survive, let alone scale? Most startup failures are not failures of vision — they are failures of arithmetic. The founders either never ran the numbers or ran them and looked away.
+
+Christian stewardship demands the discipline to look at what the numbers actually say. It means resisting the temptation of optimistic projections when evidence suggests pessimism is warranted. It means being honest with investors, partners, and employees about the real state of the business. It means having the character to say "we cannot finish this tower" before laying the foundation, rather than after.
+
+The financial discipline this module teaches is, in the hands of a person of faith, also a moral discipline: the commitment to honesty, prudence, and accountability with resources that were never entirely yours to begin with.
+
+---
+
+### ✍️ Faith Integration Paper — Module 4
+
+**Assignment:** Using Claude or Gemini as a co-writer, compose a **1-page reflection paper** (approximately 300–400 words) responding to the following prompt:
+
+> *Luke 14:28 calls us to "count the cost" before committing. In this module, you have built a unit economics model for your venture. What did the numbers reveal that your optimism wanted to hide? Where did you have to resist the temptation to fudge an assumption to make the model "work"? How does a Christian commitment to honesty and stewardship show up in the practice of financial modeling — and what do you do when the honest model says the business doesn't work?*
+
+**Process:**
+1. Share the prompt with Claude or Gemini and co-draft the paper.
+2. Revise with real numbers or decisions from your Module 4 lab work.
+3. Submit the human-owned version.
+
+**Format:** 1 page, double-spaced, 12pt font, Times New Roman. Include Luke 14:28 at the top.
+
+**Grading:** Theological engagement, honest reflection on your actual modeling experience, personal authenticity.
+
+---
+
 ## Lab 4: The Unit Economics Model
 
 :::{important}

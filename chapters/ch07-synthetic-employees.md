@@ -472,6 +472,42 @@ The lesson for founders: the Klarna model is not a template for "fire the custom
 
 ---
 
+## Faith Integration — Module 7
+
+> *"What does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God?"*
+> — Micah 6:8 (ESV)
+
+### Human Dignity and the Synthetic Employee Question
+
+One of the most significant ethical questions of the AI era is not whether synthetic employees *can* replace human workers — they clearly can, in many domains. The question is: *what do we owe to the people whose jobs they replace?*
+
+This is not primarily a policy question; it is a character question. How a business leader responds to worker displacement reveals what they actually believe about the value of human beings. Micah 6:8 gives us three coordinates: justice (are workers treated fairly?), kindness (is there genuine care for their wellbeing?), and humility (are we honest about our own limitations and the moral weight of these decisions?).
+
+The history of technological displacement is complicated. Automation has, across long time horizons, created more jobs than it destroyed — but that consolation is cold to the individual whose livelihood disappeared. A Christian business professional must hold both truths simultaneously: technological progress can serve human flourishing in the aggregate, and it can cause real suffering to specific people who deserve real consideration.
+
+Synthetic employees are not going away. The question is whether the people who deploy them will do so with justice, kindness, and humility — investing in transition, being honest about what is happening, and refusing to treat displaced workers as mere line items in a cost optimization exercise.
+
+This module teaches you to build and deploy AI agents. Take that power seriously. How you use it will matter — to real people, and to God.
+
+---
+
+### ✍️ Faith Integration Paper — Module 7
+
+**Assignment:** Using Claude or Gemini as a co-writer, compose a **1-page reflection paper** (approximately 300–400 words) responding to the following prompt:
+
+> *In this module, you designed a synthetic employee to perform a business function. Identify the real human role your AI agent most directly displaces or augments. Drawing on Micah 6:8 (justice, kindness, humility), describe what a responsible deployment of this agent would look like. What obligations does the business deploying this agent have to affected workers? Where does efficiency end and exploitation begin? How would you want to be treated if your role were the one being automated?*
+
+**Process:**
+1. Co-draft with Claude or Gemini, being specific about the agent you built.
+2. Revise with your own moral reasoning — don't let the AI do the ethical work for you.
+3. Submit the human-owned version.
+
+**Format:** 1 page, double-spaced, 12pt font, Times New Roman. Include Micah 6:8 at the top.
+
+**Grading:** Seriousness of ethical engagement, theological connection, specificity about your actual agent work.
+
+---
+
 ## Lab 7: Hire a Synthetic Employee
 
 :::{important}

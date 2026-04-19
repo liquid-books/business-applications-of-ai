@@ -548,6 +548,41 @@ By training AI models on this proprietary corpus, Shopify created a moat that a 
 
 ---
 
+## Faith Integration — Module 1
+
+> *"The Lord God took the man and put him in the Garden of Eden to work it and take care of it."*
+> — Genesis 2:15 (NIV)
+
+### Stewardship in the Age of AI
+
+From the opening chapters of Scripture, humans are called to be stewards — caretakers of what God has entrusted to them. We did not create the earth; we were placed in it with a mandate to cultivate and keep it. The same logic applies to every resource, talent, and technology that passes through our hands.
+
+Artificial intelligence is one of the most powerful tools ever placed in human hands. Like fire, the printing press, or the internet before it, it does not arrive with a pre-programmed moral direction — it amplifies the intentions and values of those who wield it. A Christian business professional operating in this environment faces a question that goes beyond market strategy: *Am I using this tool to serve, or to exploit? To build up, or to extract?*
+
+The stewardship framework gives us a lens for evaluating AI adoption decisions that return-on-investment calculations cannot. It asks: Does this application of AI reflect care for people, for communities, for the world God made? Does it leave things better than we found them? Does it align the power of technology with the purposes of love?
+
+As you configure your AI tool stack in this module, resist the temptation to treat these tools as mere productivity multipliers. They are instruments of agency — your agency. The character you bring to them will shape what they produce.
+
+---
+
+### ✍️ Faith Integration Paper — Module 1
+
+**Assignment:** Using Claude or Gemini as a co-writer, compose a **1-page reflection paper** (approximately 300–400 words) responding to the following prompt:
+
+> *You are about to become one of the most AI-capable business professionals in your field. Drawing on Genesis 2:15 and the concept of stewardship, describe the personal framework you will use to decide when, how, and for whose benefit you will deploy AI tools in your career. What guardrails will you put in place? Who are the "neighbors" your AI-powered work should serve?*
+
+**Process:**
+1. Open Claude or Gemini and share the prompt above.
+2. Ask the AI to help you brainstorm, outline, and draft the paper.
+3. Revise the draft in your own voice — add a personal story, conviction, or example that makes it authentically yours.
+4. Submit the final version (AI-assisted, human-owned).
+
+**Format:** 1 page, double-spaced, 12pt font, Times New Roman. Include the Genesis 2:15 passage at the top.
+
+**Grading:** Assessed on theological engagement (does it genuinely wrestle with stewardship?), personal authenticity (is your voice present?), and practical specificity (does it name real decisions you will face?).
+
+---
+
 ## Lab 1: The Tool Gauntlet
 
 **Objective:** Achieve baseline proficiency across all six core AI tools by completing a structured series of tasks that mirror real business use cases.

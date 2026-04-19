@@ -337,6 +337,40 @@ flowchart LR
 
 ---
 
+## Faith Integration — Module 3
+
+> *"Suppose one of you has a hundred sheep and loses one of them. Doesn't he leave the ninety-nine in the open country and go after the lost sheep until he finds it?"*
+> — Luke 15:4 (NIV)
+
+### The Parable of the Lost Sheep and the Ideal Customer Profile
+
+The parable of the lost sheep is not primarily a business parable — but its logic is instructive for anyone who has ever tried to build a product for "everyone" and ended up serving no one particularly well.
+
+The shepherd in Luke 15 does not optimize for the average sheep. He knows his flock — he notices the one who is missing. He has enough relational knowledge of his specific sheep that the absence of one out of a hundred registers as a crisis worth crossing difficult terrain to resolve.
+
+This is the spirit of an Ideal Customer Profile done right. The ICP is not a demographic composite; it is a genuine act of attention toward a specific kind of person with a specific kind of struggle. The entrepreneur who truly knows their beachhead customer — their daily frustrations, their professional pressures, the language they use to describe their problem — has done something fundamentally different from the one who gestures vaguely at a market segment.
+
+There is also a warning embedded in this parable for business: the 99 were fine. Serving the majority who don't desperately need you is comfortable. Going after the one who is lost — the underserved, the overlooked, the customer whose problem is real but whose market size looks small — is risky and inconvenient. Yet it is precisely these overlooked customers who reward obsessive attention with fierce loyalty.
+
+---
+
+### ✍️ Faith Integration Paper — Module 3
+
+**Assignment:** Using Claude or Gemini as a co-writer, compose a **1-page reflection paper** (approximately 300–400 words) responding to the following prompt:
+
+> *In Luke 15, the shepherd leaves the 99 to pursue the 1. In this module, you have been asked to narrow your focus to a specific beachhead customer — resisting the temptation to serve everyone. Reflect on the tension between going narrow (high risk, high reward) and going broad (comfortable, diluted). How does the parable's logic support or challenge your instincts as a business builder? What does it mean, practically, to "know" your ICP the way a shepherd knows his flock?*
+
+**Process:**
+1. Share the prompt with Claude or Gemini. Ask it to help you think through the tension and draft the paper.
+2. Revise with personal reflection — reference your actual ICP work.
+3. Submit the human-owned final version.
+
+**Format:** 1 page, double-spaced, 12pt font, Times New Roman. Include Luke 15:4 at the top.
+
+**Grading:** Theological engagement, honest reflection on your beachhead decision, personal authenticity.
+
+---
+
 ## Lab 3: The ICP Dossier
 
 :::{important}

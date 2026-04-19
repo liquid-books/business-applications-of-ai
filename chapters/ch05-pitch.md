@@ -413,6 +413,40 @@ Three pitch outcomes, three pivotal moments. The funded pitch won trust before s
 
 ---
 
+## Faith Integration — Module 5
+
+> *"An honest witness tells the truth, but a false witness tells lies."*
+> — Proverbs 12:17 (NIV)
+
+### Truth-Telling in the Pitch Room
+
+The pitch room is one of the highest-pressure environments a founder will ever enter. Careers, capital, and credibility hang in the balance. Under that pressure, the temptation to shade the truth — to make the TAM look bigger, the traction look stronger, the team look more complete — is significant and well-documented.
+
+Proverbs 12:17 draws a simple but sharp line: honest witness versus false witness. There is no gray zone, no "strategic ambiguity," no "investor-friendly framing" that crosses into misrepresentation. The Christian entrepreneur is called to tell the truth about their business — including the risks, the gaps, and the assumptions that haven't been validated yet.
+
+This is not naive. Sophisticated investors actually prefer founders who demonstrate clear-eyed awareness of their business's weaknesses. The founder who can say "here is where we are vulnerable and here is what we are doing about it" is more credible, not less, than the one who projects unbroken confidence. Honesty is not only ethically required — it is often strategically superior.
+
+But the biblical call to truth goes deeper than self-interest. An investor who is misled loses money. An employee who joins a company under false pretenses may derail their career. A customer who is over-promised and under-delivered suffers real harm. The ripple effects of dishonesty in the pitch room extend far beyond the founder's own reputation. A Christian business professional takes those ripple effects seriously — because those people matter, not just instrumentally, but as image-bearers of God.
+
+---
+
+### ✍️ Faith Integration Paper — Module 5
+
+**Assignment:** Using Claude or Gemini as a co-writer, compose a **1-page reflection paper** (approximately 300–400 words) responding to the following prompt:
+
+> *Proverbs 12:17 calls you to be an honest witness about your business. As you prepare your pitch, identify one place where you are tempted to present something more favorably than the evidence strictly warrants — and write about why that temptation exists and what it would look like to resist it. What does it mean to be radically transparent in a pitch without "torpedoing" your own deal? How do Christian integrity and investor credibility align — and where do they tension?*
+
+**Process:**
+1. Co-draft with Claude or Gemini. Be honest in the prompt — share the real tension you face.
+2. Revise with your specific pitch content in mind.
+3. Submit the human-owned version.
+
+**Format:** 1 page, double-spaced, 12pt font, Times New Roman. Include Proverbs 12:17 at the top.
+
+**Grading:** Courage of honesty, theological engagement, connection to your actual pitch.
+
+---
+
 ## Lab 5: The Pitch
 
 This is the culminating deliverable for the first half of the course. Every component builds on the work from previous chapters.

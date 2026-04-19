@@ -494,6 +494,40 @@ This is the template for AI-native competitive advantage. The companies that win
 
 ---
 
+## Faith Integration — Module 2
+
+> *"Whatever you do, work at it with all your heart, as working for the Lord, not for human masters."*
+> — Colossians 3:23 (NIV)
+
+### Excellence as Worship: The Theology of a Great Value Proposition
+
+Colossians 3:23 is one of the most practically disruptive verses in the New Testament. It doesn't say "do your best when it matters." It says *whatever you do* — including, implicitly, the spreadsheets, the pitch decks, the customer interviews, and the product specs — do it wholeheartedly, as if the audience is God himself.
+
+This verse reframes what it means to build a great value proposition. A pain-first value proposition is not merely good strategy; it is an act of attention — of actually listening to another person's struggle rather than projecting your solution onto them. The Jobs-to-Be-Done framework is, at its core, an exercise in empathy. What is this person really trying to accomplish? What is getting in their way? What would it mean for their life if that problem disappeared?
+
+Christian business professionals have a theological basis for this kind of deep customer attention that secular frameworks cannot fully supply. We are commanded to love our neighbors as ourselves (Matthew 22:39). Your customer is your neighbor. Building a value proposition that genuinely solves their problem — not one that merely generates revenue — is an act of love expressed through commerce.
+
+The standard Colossians sets is demanding precisely because it refuses to let us compartmentalize: our professional craft is not separate from our faith. The quality of care we put into our value proposition is a form of worship.
+
+---
+
+### ✍️ Faith Integration Paper — Module 2
+
+**Assignment:** Using Claude or Gemini as a co-writer, compose a **1-page reflection paper** (approximately 300–400 words) responding to the following prompt:
+
+> *Colossians 3:23 calls you to work wholeheartedly "as for the Lord." Apply this to the value proposition you are developing in this course. What would it look like to build a product or service for your target customer with that same standard of care? Where are you tempted to cut corners on genuinely understanding their pain? What would change if you treated customer discovery as a spiritual discipline?*
+
+**Process:**
+1. Share the prompt with Claude or Gemini and use the AI to brainstorm and draft.
+2. Revise into your own voice — include a real example from your customer research or life experience.
+3. Submit the final, human-owned version.
+
+**Format:** 1 page, double-spaced, 12pt font, Times New Roman. Include Colossians 3:23 at the top.
+
+**Grading:** Theological engagement, personal authenticity, connection to your actual value proposition work.
+
+---
+
 ## Lab 2: The Value Proposition Canvas
 
 **Estimated time:** 3–4 hours

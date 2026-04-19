@@ -427,6 +427,43 @@ If you take one thing from this case study: write the spec first, keep it visibl
 
 ---
 
+## Faith Integration — Module 6
+
+> *"In the beginning God created the heavens and the earth."*
+> — Genesis 1:1 (NIV)
+
+> *"So God created mankind in his own image, in the image of God he created them."*
+> — Genesis 1:27 (NIV)
+
+### Imago Dei: Humans as Sub-Creators
+
+The very first thing Scripture tells us about God is that he creates. And the very first thing it tells us about humanity is that we are made in his image — the image of a Creator. This is the doctrine of the *Imago Dei*, and it has radical implications for what it means to build software.
+
+When you use Claude Code to translate a business idea into a functioning application, you are doing something uniquely human: taking what exists only in the mind and making it real in the world. Every other creature in the Genesis narrative is created; only humans are commissioned to be co-creators — to continue the work of bringing order, beauty, and function into the world through their own acts of making.
+
+Vibe coding does not diminish this calling. It amplifies it. For the first time in history, the barrier between "I can imagine this" and "I can build this" has been reduced to the quality of your thinking and the clarity of your communication. The non-developer can now build. The solo founder can now ship what previously required a team. This is an extraordinary gift — and like all gifts, it carries responsibility.
+
+What will you build? For whom? Toward what end? The Imago Dei does not just celebrate the act of creation; it anchors it in the character of the Creator — a God who builds things that are *good*, that *serve*, that *flourish*. Your work with code is not exempt from that standard.
+
+---
+
+### ✍️ Faith Integration Paper — Module 6
+
+**Assignment:** Using Claude or Gemini as a co-writer, compose a **1-page reflection paper** (approximately 300–400 words) responding to the following prompt:
+
+> *Genesis 1 teaches that you are made in the image of a Creator God — you are, by design, a maker. Reflect on the experience of building your MVP in this module. What does it feel like to create something from nothing? How does the concept of Imago Dei change the way you think about the responsibility you carry as a builder? What does it mean to build software that is "good" in the biblical sense — not just technically functional, but truly beneficial for the people who will use it?*
+
+**Process:**
+1. Co-draft with Claude or Gemini, sharing the prompt and your build experience.
+2. Revise with specific details from your MVP work — what did you actually make?
+3. Submit the human-owned version.
+
+**Format:** 1 page, double-spaced, 12pt font, Times New Roman. Include Genesis 1:1 and 1:27 at the top.
+
+**Grading:** Theological depth, personal reflection on the building experience, specificity about your actual MVP.
+
+---
+
 ## Lab 6: Ship Your MVP
 
 **Deliverable:** A live, deployed URL for the product you pitched in Chapter 5.
