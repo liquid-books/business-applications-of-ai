@@ -4,8 +4,8 @@ version: 1
 project:
   title: "Business Applications of AI"
   subtitle: "A Faith-Integrated Graduate Textbook — Palm Beach Atlantic University"
-  description: "A graduate-level textbook integrating AI business strategy with Christian faith principles. Nine modules, one capstone: you will leave with a pitchable business."
-  keywords: [AI, business applications, Business Model Canvas, value proposition, unit economics, vibe coding, synthetic employees, MarTech, faith integration, Palm Beach Atlantic University]
+  description: "A graduate-level textbook integrating AI business strategy with Christian faith principles. Eleven modules, one capstone: you will leave with a pitchable, operating business."
+  keywords: [AI, business applications, Business Model Canvas, value proposition, unit economics, vibe coding, synthetic employees, MarTech, faith integration, AI ethics, agentic enterprise, Palm Beach Atlantic University]
   license: CC-BY-4.0
   open_access: true
   github: https://github.com/liquid-books/business-applications-of-ai
@@ -40,6 +40,10 @@ project:
       file: chapters/ch08-martech.md
     - title: "Module 9: The End of the Information Tax"
       file: chapters/ch09-information-tax.md
+    - title: "Module 10: AI Ethics, Governance, and the Responsible Enterprise"
+      file: chapters/ch10-ai-ethics-governance.md
+    - title: "Module 11: The Agentic Enterprise — When AI Runs the Business"
+      file: chapters/ch11-agentic-enterprise.md
     - title: "Appendices"
       file: chapters/appendices.md
 

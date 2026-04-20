@@ -495,52 +495,170 @@ The line between these two uses of the same technology is drawn by intent and ch
 
 ---
 
-## Lab 8: Sales and Marketing in a Box
+## Lab 8: Your First Live Marketing System
 
 :::{important}
 **A Note on Prompting: Meta-Prompting Is Required**
 The prompts below are starter prompts only. Use meta-prompting (ask Claude or Gemini to expand into a thorough 2–3 paragraph prompt) before submitting any task. A one-liner will not pass.
 :::
 
-This lab produces a complete, live marketing and sales system for your Chapter 6 MVP connected to your Chapter 7 agent stack.
+**Estimated time:** 25–30 minutes  
+**Difficulty:** Beginner-friendly  
+**What you will build:** A live two-step funnel with a capture form, an automated email + SMS confirmation workflow, and a sales pipeline — all connected inside GoHighLevel.
+
+By the end of this lab you will have a real, working marketing system that captures leads and sends automated follow-ups. This is not a simulation. This is live infrastructure.
 
 ### Prerequisites
 
-- Chapter 6 MVP is live (or testable via staging URL)
-- Chapter 7 synthetic SDR is configured
-- A GoHighLevel trial account or sub-account (free 14-day trial available at [gohighlevel.com](https://www.gohighlevel.com))
+Before you begin:
+- Sign up for a GoHighLevel 14-day free trial at [app.gohighlevel.com](https://app.gohighlevel.com) (no credit card required to start)
+- Log in and confirm you are inside a **sub-account** (the left sidebar should show your sub-account name, not "Agency View")
+- Have your Chapter 2 ICP pain point and Chapter 3 ICP description ready — you will use them to write your page copy
 
-### Task 1: Build and Publish the Funnel
+:::{note}
+**GHL Navigation Orientation**  
+All steps below use the left-hand sidebar menu. If you do not see the sidebar items listed, confirm you are in a sub-account, not the agency-level view. If needed, click the sub-account name at the top left to switch.
+:::
 
-Build a two-step opt-in funnel for your MVP inside GHL. Page 1 is the lead magnet offer — a resource that solves a real problem your ICP faces, based on your Chapter 2 and Chapter 3 work. Page 2 is the thank-you / confirmation page with the next step clearly stated. Publish the funnel and confirm it is live at a GHL-hosted URL.
+---
 
-**Meta-prompt starter:** *"I need to build a lead magnet landing page for [describe your MVP and ICP]. Expand this into a thorough prompt I can use to generate full landing page copy including headline, subheadline, three benefit bullets, social proof element, and CTA button text. The tone should be [describe your brand voice]. The audience's primary pain point is [describe it]."*
+### Task 1: Build and Publish a Two-Step Funnel (10 min)
 
-**Deliverable:** Published funnel URL (submitted to instructor for verification).
+You are building a lead magnet funnel: Page 1 captures the visitor's name and email in exchange for a resource. Page 2 confirms delivery and states the next step.
 
-### Task 2: Capture Form with Automation
+**Step 1 — Open the Funnel Builder**
+1. In the left sidebar, click **Sites**.
+2. Click **Funnels**.
+3. Click **+ New Funnel** (top right).
+4. Select **From Template**.
+5. In the Template Library, filter by **Lead Generation**. Choose any two-page opt-in template that matches your brand.
+6. Click **Continue**.
 
-Add a capture form to your funnel's opt-in page. Connect the form to a workflow that (1) sends an immediate confirmation email delivering the lead magnet, (2) sends an immediate SMS confirming receipt, and (3) creates an opportunity in your pipeline at Stage 1. Test by submitting your own email and confirming all three actions fire within 5 minutes.
+**Step 2 — Customize Page 1 (Opt-In Page)**
+1. Click on the headline text block. Replace the placeholder headline with your own. Use this AI-assisted approach: open Claude or Gemini and run your meta-prompt starter below, then paste the generated headline into GHL.
 
-**Deliverable:** Screenshot of workflow trigger history showing three actions fired on test submission.
+   **Meta-prompt starter:** *"I need a landing page headline for a lead magnet targeting [describe your ICP from Chapter 3]. The lead magnet solves [describe their primary pain from Chapter 2]. Expand this into a thorough prompt I can use to generate a complete headline, subheadline, three benefit bullets, and CTA button text. The tone should match [describe your brand voice]."*
 
-### Task 3: Nurture Sequence — Minimum Five Touches
+2. Replace the subheadline, three benefit bullets, and CTA button text with AI-generated copy.
+3. **Do not change the form on this step** — you will connect a proper form in Task 2.
+4. Click **Save** (top right).
 
-Build a nurture sequence of at least five emails, spaced appropriately (suggested: Day 0 delivery, Day 2 problem, Day 4 mechanism, Day 7 social proof, Day 10 offer). Each email must have a subject line, preview text, and body copy written with your brand voice prompt library. Include one conditional branch: if the contact books a call at any point, remove them from the sequence.
+**Step 3 — Customize Page 2 (Thank-You Page)**
+1. Click on **Step 2** (the thank-you page tab at the top of the editor).
+2. Update the headline to confirm delivery: e.g., *"You're in — check your inbox in the next 2 minutes."*
+3. Add a clear next step: e.g., a button linking to your MVP URL or a calendar booking link.
+4. Click **Save**.
 
-**Deliverable:** Screenshot of completed workflow showing all five emails and the conditional branch.
+**Step 5 — Publish**
+1. Click **Settings** in the funnel editor (gear icon or top menu).
+2. Under **Domain**, click **Use HighLevel Domain** to publish on a GHL-hosted URL (e.g., `yourname.gohighlevelpages.com/your-funnel`).
+3. Toggle the funnel to **Published**.
+4. Copy the published URL.
 
-### Task 4: Pipeline with Named Stages
+**Deliverable:** Paste the live funnel URL into your lab submission.
 
-Create a pipeline for your MVP with a minimum of five named stages relevant to your sales process. Suggested stages: New Lead → Contacted → Qualified → Proposal Sent → Won / Lost. Move at least three test contacts through the pipeline manually to verify stage transitions and confirm that stage-triggered workflows fire.
+---
 
-**Deliverable:** Screenshot of pipeline board with at least three opportunities across multiple stages.
+### Task 2: Add a Capture Form and Connect an Automation (12 min)
 
-### Task 5: Integration with Chapter 7 Agent
+A funnel page that does not capture data is a billboard. You will now add a form and wire it to an automated email + SMS confirmation workflow.
 
-Connect your Chapter 7 synthetic SDR to GHL. When the SDR qualifies a lead, it should call the GHL webhook to add the "sales-ready" tag and move the opportunity to the Qualified stage. Test the integration end-to-end: a form submission triggers the SDR conversation, the SDR qualifies the lead, the webhook fires, and the pipeline updates automatically.
+**Part A — Create the Form**
 
-**Deliverable:** Screenshot of contact record showing the "sales-ready" tag and pipeline stage updated by the agent, plus the webhook call log.
+1. In the left sidebar, click **Sites** → **Forms**.
+2. Click **+ Create New Form**.
+3. Drag in the following fields from the right panel: **Full Name**, **Email**, **Phone**.
+4. Under **Form Actions** (Settings tab), set the redirect after submission to your **Thank-You Page URL** (copy it from the funnel editor).
+5. Click **Save Form**. Name it something recognizable, e.g., *"Lead Magnet Opt-In."*
+
+**Part B — Embed the Form in Your Funnel**
+
+1. Go back to **Sites → Funnels**, open your funnel, and click to edit **Page 1**.
+2. Click on the existing form element on the page (it will be a placeholder from the template).
+3. In the right panel, click **Form Picker** and select your *"Lead Magnet Opt-In"* form.
+4. Click **Save**.
+
+**Part C — Build the Automation Workflow**
+
+1. In the left sidebar, click **Automation** → **Workflows**.
+2. Click **+ Create Workflow** → **Start from Scratch**.
+3. Click **+ Add New Trigger** → select **Form Submitted**.
+4. Click **Add Filter** → **Form Is** → select *"Lead Magnet Opt-In"* → click **Save Trigger**.
+5. Click the **+** button below the trigger to add your first action.
+6. Select **Send Email**. Fill in:
+   - **From Name:** your name or brand name
+   - **Subject:** *"Here's your [lead magnet name] — as promised"*
+   - **Body:** Write a short delivery email (3–4 sentences) using your AI-generated copy. Include the lead magnet link or describe next steps.
+   - Click **Save Action**.
+7. Click **+** again to add a second action.
+8. Select **Send SMS**. Write a short confirmation text (under 160 characters), e.g., *"Hey {{contact.first_name}}, your [resource] is on its way — check your inbox!"*. Click **Save Action**.
+9. Click **+** again to add a third action.
+10. Select **Opportunity** → **Create/Update Opportunity**.
+    - **Pipeline:** Select the pipeline you will create in Task 3 (or create one now named *"[Your MVP] Pipeline"*).
+    - **Stage:** *New Lead*
+    - **Status:** Open
+    - Click **Save Action**.
+11. Toggle the workflow from **Draft** to **Published** (top right). Click **Save**.
+
+**Step D — Test Your Workflow**
+1. Open your published funnel URL in a browser.
+2. Submit the form using your own name, email, and phone number.
+3. Within 3–5 minutes, confirm: (a) you received the confirmation email, (b) you received the SMS, (c) an opportunity appeared in your pipeline.
+
+:::{note}
+**Why bulk imports don't trigger this workflow**  
+Per GHL documentation, the *Form Submitted* trigger fires on individual form submissions only — not on bulk CSV imports. This is by design to prevent automation overload. Your test submission using the live form is the correct way to validate the workflow.
+:::
+
+**Deliverable:** Screenshot of the workflow's **Execution Log** (found under the workflow's History tab) showing the three actions fired on your test submission.
+
+---
+
+### Task 3: Build Your Sales Pipeline (5 min)
+
+1. In the left sidebar, click **Opportunities**.
+2. Click **Pipelines** (top navigation bar inside Opportunities).
+3. Click **+ Create New Pipeline**.
+4. Name it *"[Your MVP Name] Pipeline."*
+5. Add the following stages by clicking **+ Add Stage** for each:
+   - New Lead
+   - Contacted
+   - Qualified
+   - Proposal Sent
+   - Won
+   - Lost
+6. Click **Save Pipeline**.
+7. Click **Board View**. Find the test contact you submitted in Task 2 — they should appear in the *New Lead* stage automatically (from the workflow action you built).
+8. Drag your test contact card from *New Lead* to *Contacted* to verify drag-and-drop stage transitions work.
+
+**Deliverable:** Screenshot of the pipeline board in Board View with your test contact card visible in the *Contacted* stage.
+
+---
+
+### ✋ Your Turn — Personalize It
+
+The system you just built is generic. Now make it yours.
+
+1. **Add three real contacts manually.** In the left sidebar, click **Contacts** → **+ Add Contact**. Enter the name, email, and phone of three people you know (with their permission) who represent your ICP. These could be classmates, colleagues, or people from your customer discovery interviews in Chapter 3. Add them directly to your pipeline in the *New Lead* stage by clicking **+ Add Opportunity** from their contact record.
+
+2. **Personalize your confirmation email.** Go back to your workflow and edit the **Send Email** action. Rewrite the email body using the actual name of your lead magnet and a specific, concrete next step (a link to your MVP, a calendar booking link, or a short video). Generic placeholders are not acceptable.
+
+3. **Name your pipeline stages to match your actual sales process.** If *"Proposal Sent"* does not fit your business model (maybe you pitch verbally, or you do demos), rename the stages to reflect what actually happens in your sales process. There is no correct universal answer — the pipeline should describe *your* deal flow.
+
+**Deliverable:** Screenshot of your pipeline board showing your three manually added contacts plus your test contact, with stage names customized to your business.
+
+---
+
+### Lab 8 Submission Checklist
+
+Before submitting, confirm all four deliverables are ready:
+
+- [ ] Published funnel URL
+- [ ] Workflow execution log screenshot (3 actions fired)
+- [ ] Pipeline board screenshot with test contact in *Contacted* stage
+- [ ] Pipeline board screenshot with three personalized contacts and custom stage names
+
+**Format:** Submit all screenshots plus a 200-word reflection (typed, not AI-generated) answering: *What surprised you most about building this system? Where do you see it breaking down at scale?*
 
 ---
 

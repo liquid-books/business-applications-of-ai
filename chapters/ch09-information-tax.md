@@ -581,6 +581,110 @@ A Christian understanding of this moment is not triumphalist. The collapse of as
 
 ---
 
+## Hands-On Lab 9: The 30-Minute Asymmetry Audit
+
+:::{important}
+**Time Budget:** This lab is designed to be completed in **30 minutes or less**. It is a diagnostic exercise, not a polished deliverable. Speed and honesty are more important than polish.
+:::
+
+This lab walks you through applying the four-type asymmetry framework to your own venture in a structured, timed session using an AI tool (Claude or Gemini) as your thinking partner. By the end, you will have a one-page asymmetry audit card that feeds directly into the Lab 9 Written Assignment (below) and the "Why We Survive" slide.
+
+---
+
+### Prerequisites
+
+- Access to Claude (claude.ai) or Gemini (gemini.google.com) — free tier is fine
+- Your Chapter 2 Business Model Canvas (or a clear mental picture of your venture's value proposition)
+- 30 uninterrupted minutes
+
+---
+
+### Step 1 — Frame Your Venture (5 minutes)
+
+Open your AI tool of choice. Paste the following system setup into the conversation window:
+
+> *"You are a strategic business consultant specializing in information economics and professional services disruption. I am going to describe my venture's value proposition, and you are going to help me diagnose which types of information asymmetry my business depends on and how vulnerable those asymmetries are to AI over the next five years. The four asymmetry types are: (1) Knowledge Asymmetry — I know more than my customer; (2) Process Asymmetry — I control a workflow my customer can't navigate alone; (3) Access Asymmetry — I control data my customer can't get elsewhere; (4) Interpretation Asymmetry — both of us see the same data, but only I can make sense of it. For each type, you will give me a dependency score from 0 to 10 and a vulnerability score from 0 to 10, and you will explain your reasoning in two sentences. Ready."*
+
+Then, in your own words (not polished prose — just clear description), tell the AI:
+
+- What your venture does
+- Who your customer is
+- What the customer pays you for — specifically, what they *couldn't* do without you
+
+**Deliverable:** Your venture description typed into the AI tool.
+
+---
+
+### Step 2 — Run the Audit (10 minutes)
+
+After you've described your venture, send this follow-up:
+
+> *"Now give me the asymmetry audit. For each of the four types, give me: dependency score (0–10), vulnerability score (0–10), and a two-sentence explanation of your reasoning. Format it as a table with four rows."*
+
+Read the output carefully. If something seems wrong or you disagree, push back:
+
+> *"You scored my [type] asymmetry dependency at [X]. I think it should be higher/lower because [your reason]. Revise."*
+
+Iterate until the scores feel accurate. The goal is a table you actually believe.
+
+**Deliverable:** A four-row asymmetry audit table you agree with.
+
+---
+
+### Step 3 — Identify Your Highest-Risk Asymmetry (5 minutes)
+
+Look at your table. The cell with the highest combined score (dependency × vulnerability) is your most exposed position. Ask the AI:
+
+> *"Based on this audit, what is my single most dangerous asymmetry exposure — the one that could most significantly erode my revenue over the next five years — and what is the specific mechanism of that erosion?"*
+
+Write down the AI's answer in your own words. This is the honest view of your biggest structural risk.
+
+**Deliverable:** One paragraph describing your highest-risk asymmetry exposure.
+
+---
+
+### Step 4 — Name Your Trust Premium (5 minutes)
+
+Ask the AI:
+
+> *"Now help me identify what survives the collapse of [your highest-risk asymmetry]. Which of the four durable pillars — judgment, accountability, relationships, or presence — is most naturally the foundation of my venture's trust premium, and why? Be specific to my venture, not generic."*
+
+Read the response. If the AI gives you a generic answer ("strong relationships are always valuable"), push back and ask it to connect the insight to your specific venture model.
+
+**Deliverable:** One paragraph naming your trust premium and explaining why it is specific to your venture.
+
+---
+
+### Step 5 — Synthesize Your Audit Card (5 minutes)
+
+Ask the AI to produce a formatted one-page audit summary:
+
+> *"Generate a one-page Asymmetry Audit Card for my venture with these sections: (1) Venture Name and Value Proposition (2 sentences); (2) Asymmetry Audit Table (four types, dependency and vulnerability scores, two-sentence rationale each); (3) Most Dangerous Exposure (two sentences); (4) Trust Premium Surviving the Collapse (two sentences); (5) One recommended strategic pivot toward greater durability."*
+
+Copy the output. This is your deliverable for this lab.
+
+---
+
+### Your Turn — Personalize the Audit
+
+The standard audit reflects your venture as it exists today. Now go one step further:
+
+1. **Look three years ahead.** Ask the AI: *"Assuming AI progress continues at its current rate, re-run this audit assuming it is three years from now. What changes?"* Compare the two audits. Note what shifted and what held.
+
+2. **Audit a competitor.** Pick the most AI-vulnerable direct competitor in your market. Run the same audit on them. Note where their vulnerability scores differ from yours — that gap is your durable differentiation.
+
+3. **Write your "Why We Survive" sentence.** In one sentence, without any hedging, state why your venture survives the asymmetry collapse. Post it to the class discussion board (not as a discussion board assignment — just as a peer share).
+
+---
+
+### Submission
+
+Submit your completed Asymmetry Audit Card (the one-page output from Step 5) to the course LMS. Include the three-years-ahead comparison audit from the "Your Turn" section. No length minimum — completeness and honesty are the only criteria.
+
+**Estimated total time:** 30 minutes. Students who exceed 45 minutes are over-engineering the deliverable.
+
+---
+
 ## Lab 9: The Post-Asymmetry Business Plan
 
 :::{important}
