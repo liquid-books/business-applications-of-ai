@@ -8,6 +8,8 @@ const PDFDocument = require('pdfkit');
 const { marked } = require('marked');
 const fs = require('fs');
 const path = require('path');
+const https = require('https');
+const zlib = require('zlib');
 
 const BOOK_DIR = path.resolve(__dirname, '..');
 const CHAPTERS_DIR = path.join(BOOK_DIR, 'chapters');
@@ -36,10 +38,31 @@ const GRAY      = '#555555';
 const LIGHT_BG  = '#f4f6fb';
 const BLACK     = '#1a1a2e';
 
+// Render a mermaid diagram via Kroki public API → returns PNG Buffer
+function renderMermaid(mermaidCode) {
+  return new Promise((resolve, reject) => {
+    const deflated = zlib.deflateSync(Buffer.from(mermaidCode, 'utf8'));
+    const encoded = deflated.toString('base64')
+      .replace(/\+/g, '-').replace(/\//g, '_');
+    const url = `https://kroki.io/mermaid/png/${encoded}`;
+    https.get(url, { headers: { 'Accept': 'image/png' } }, (res) => {
+      if (res.statusCode !== 200) {
+        res.resume();
+        return reject(new Error(`Kroki returned ${res.statusCode}`));
+      }
+      const chunks = [];
+      res.on('data', c => chunks.push(c));
+      res.on('end', () => resolve(Buffer.concat(chunks)));
+      res.on('error', reject);
+    }).on('error', reject);
+  });
+}
+
 // Strip MyST directives and frontmatter from markdown
 function cleanMd(md) {
   return md
-    .replace(/^---[\s\S]*?---\n/m, '')          // frontmatter
+    .replace(/^---[\s\S]*?---\n/m, '')           // frontmatter
+    .replace(/^```\{mermaid\}/gm, '```mermaid')  // MyST mermaid → standard mermaid
     .replace(/:::\{[^}]*\}[\s\S]*?:::/g, '')     // MyST directives with content
     .replace(/^:::[^\n]*$/gm, '')                // bare ::: lines
     .replace(/^\{[^}]*\}[^\n]*$/gm, '')          // {label} etc
@@ -88,7 +111,7 @@ function addCoverPage(doc, chapterTitle) {
   doc.addPage();
 }
 
-function renderTokens(doc, tokens, baseX, contentWidth) {
+async function renderTokens(doc, tokens, baseX, contentWidth) {
   for (const token of tokens) {
     switch (token.type) {
       case 'heading': {
@@ -163,6 +186,24 @@ function renderTokens(doc, tokens, baseX, contentWidth) {
       }
 
       case 'code': {
+        // Mermaid diagrams → render via Kroki API
+        if (token.lang && token.lang.toLowerCase() === 'mermaid') {
+          try {
+            process.stdout.write(' [mermaid→kroki]');
+            const pngBuf = await renderMermaid(token.text);
+            if (doc.y + 200 > doc.page.height - doc.page.margins.bottom) doc.addPage();
+            doc.image(pngBuf, baseX, doc.y, { fit: [contentWidth, 350], align: 'center' });
+            doc.moveDown(1);
+          } catch (err) {
+            // Fallback: styled placeholder box
+            doc.rect(baseX, doc.y, contentWidth, 40).fill('#fff3cd');
+            doc.fillColor('#856404').fontSize(9).font('Helvetica')
+               .text('[Diagram — view in online version]', baseX + 10, doc.y - 30, { width: contentWidth - 20 });
+            doc.moveDown(0.8);
+          }
+          break;
+        }
+        // Regular code block
         const lines = token.text.split('\n');
         const codeH = lines.length * 13 + 24;
         if (doc.y + codeH > doc.page.height - doc.page.margins.bottom) doc.addPage();
@@ -276,7 +317,7 @@ async function generatePdf(chapterFile, chapterTitle) {
     const pageNum = doc.bufferedPageRange ? doc.bufferedPageRange().start + doc.bufferedPageRange().count : '—';
   });
 
-  renderTokens(doc, tokens, baseX, contentWidth);
+  await renderTokens(doc, tokens, baseX, contentWidth);
 
   // Add page numbers retrospectively
   const range = doc.bufferedPageRange ? doc.bufferedPageRange() : null;
