@@ -198,20 +198,16 @@ Tool Gauntlet memo, BMC template, pitch rubric, ethics statement, glossary.
 
 :::
 
-## Download PDFs
-
-All chapters are available as individual PDF downloads.
-
-- [Preface — Why This Book Exists](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch00-preface.pdf)
-- [Module 1 — Introduction to AI Disruption](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch01-ai-disruption.pdf)
-- [Module 2 — Value Proposition](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch02-value-proposition.pdf)
-- [Module 3 — Ideal Customer Profile](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch03-ideal-customer-profile.pdf)
-- [Module 4 — Unit Economics](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch04-unit-economics.pdf)
-- [Module 5 — The Pitch](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch05-pitch.pdf)
-- [Module 6 — Vibe Coding](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch06-vibe-coding.pdf)
-- [Module 7 — Synthetic Employees](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch07-synthetic-employees.pdf)
-- [Module 8 — MarTech and Vibe Marketing](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch08-martech.pdf)
-- [Module 9 — The End of the Information Tax](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch09-information-tax.pdf)
-- [Appendices](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/appendices.pdf)
-
-*Build accordingly.*
+:::{note} Download PDFs
+**[Preface — Why This Book Exists](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch00-preface.pdf)** ·
+**[Module 1 — AI Disruption](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch01-ai-disruption.pdf)** ·
+**[Module 2 — Value Proposition](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch02-value-proposition.pdf)** ·
+**[Module 3 — Ideal Customer Profile](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch03-ideal-customer-profile.pdf)** ·
+**[Module 4 — Unit Economics](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch04-unit-economics.pdf)** ·
+**[Module 5 — The Pitch](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch05-pitch.pdf)** ·
+**[Module 6 — Vibe Coding](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch06-vibe-coding.pdf)** ·
+**[Module 7 — Synthetic Employees](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch07-synthetic-employees.pdf)** ·
+**[Module 8 — MarTech](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch08-martech.pdf)** ·
+**[Module 9 — Information Tax](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch09-information-tax.pdf)** ·
+**[Appendices](https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/appendices.pdf)**
+:::
