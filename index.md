@@ -198,12 +198,13 @@ Tool Gauntlet memo, BMC template, pitch rubric, ethics statement, glossary.
 
 :::
 
+**Download individual chapter PDFs:**
 
 :::{grid} 2
 
-:::{grid-item-card} 📄 Preface
+:::{grid-item-card} 📄 Preface — Why This Book Exists
 :link: https://github.com/liquid-books/business-applications-of-ai/raw/main/pdfs/ch00-preface.pdf
-Why This Book Exists — PDF
+Download PDF
 :::
 
 :::{grid-item-card} 📄 Module 1 — AI Disruption
