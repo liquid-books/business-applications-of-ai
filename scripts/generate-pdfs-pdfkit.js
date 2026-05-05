@@ -192,8 +192,14 @@ async function renderTokens(doc, tokens, baseX, contentWidth) {
             process.stdout.write(' [mermaid→kroki]');
             const pngBuf = await renderMermaid(token.text);
             if (doc.y + 200 > doc.page.height - doc.page.margins.bottom) doc.addPage();
-            doc.image(pngBuf, baseX, doc.y, { fit: [contentWidth, 350], align: 'center' });
-            doc.moveDown(1);
+            const imgY = doc.y;
+            const imgOpts = { fit: [contentWidth, 320], align: 'center' };
+            doc.image(pngBuf, baseX, imgY, imgOpts);
+            // Manually advance past the image — PDFKit doesn't always update doc.y with explicit coords
+            const imgDims = doc.openImage(pngBuf);
+            const scale = Math.min(contentWidth / imgDims.width, 320 / imgDims.height);
+            doc.y = imgY + imgDims.height * scale + 16;
+            doc.moveDown(0.5);
           } catch (err) {
             // Fallback: styled placeholder box
             doc.rect(baseX, doc.y, contentWidth, 40).fill('#fff3cd');
