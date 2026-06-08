@@ -495,100 +495,82 @@ The line between these two uses of the same technology is drawn by intent and ch
 
 ---
 
-## Lab 8: Sales and Marketing in a Box
+## Lab 8: Build a Landing Page for Your ICP in Google AI Studio
 
-:::{important}
-**A Note on Prompting: Meta-Prompting Is Required**
-The prompts below are starter prompts only. Use meta-prompting (ask Claude or Gemini to expand into a thorough 2–3 paragraph prompt) before submitting any task. A one-liner will not pass.
-:::
+**Deliverable:** A shareable link to a working AI Studio app that generates a personalized landing page for your Ideal Customer Profile — no coding required.
 
-This lab produces a complete, live marketing and sales system for your Chapter 6 MVP connected to your Chapter 7 agent stack.
-
-### Prerequisites
-
-- Chapter 6 MVP is live (or testable via staging URL)
-- Chapter 7 synthetic SDR is configured
-- A GoHighLevel trial account or sub-account (free 14-day trial available at [gohighlevel.com](https://www.gohighlevel.com))
-
-### Task 1: Build and Publish the Funnel
-
-Build a two-step opt-in funnel for your MVP inside GHL. Page 1 is the lead magnet offer — a resource that solves a real problem your ICP faces, based on your Chapter 2 and Chapter 3 work. Page 2 is the thank-you / confirmation page with the next step clearly stated. Publish the funnel and confirm it is live at a GHL-hosted URL.
-
-**Meta-prompt starter:** *"I need to build a lead magnet landing page for [describe your MVP and ICP]. Expand this into a thorough prompt I can use to generate full landing page copy including headline, subheadline, three benefit bullets, social proof element, and CTA button text. The tone should be [describe your brand voice]. The audience's primary pain point is [describe it]."*
-
-**Deliverable:** Published funnel URL (submitted to instructor for verification).
-
-### Task 2: Capture Form with Automation
-
-Add a capture form to your funnel's opt-in page. Connect the form to a workflow that (1) sends an immediate confirmation email delivering the lead magnet, (2) sends an immediate SMS confirming receipt, and (3) creates an opportunity in your pipeline at Stage 1. Test by submitting your own email and confirming all three actions fire within 5 minutes.
-
-**Deliverable:** Screenshot of workflow trigger history showing three actions fired on test submission.
-
-### Task 3: Nurture Sequence — Minimum Five Touches
-
-Build a nurture sequence of at least five emails, spaced appropriately (suggested: Day 0 delivery, Day 2 problem, Day 4 mechanism, Day 7 social proof, Day 10 offer). Each email must have a subject line, preview text, and body copy written with your brand voice prompt library. Include one conditional branch: if the contact books a call at any point, remove them from the sequence.
-
-**Deliverable:** Screenshot of completed workflow showing all five emails and the conditional branch.
-
-### Task 4: Pipeline with Named Stages
-
-Create a pipeline for your MVP with a minimum of five named stages relevant to your sales process. Suggested stages: New Lead → Contacted → Qualified → Proposal Sent → Won / Lost. Move at least three test contacts through the pipeline manually to verify stage transitions and confirm that stage-triggered workflows fire.
-
-**Deliverable:** Screenshot of pipeline board with at least three opportunities across multiple stages.
-
-### Task 5: Integration with Chapter 7 Agent
-
-Connect your Chapter 7 synthetic SDR to GHL. When the SDR qualifies a lead, it should call the GHL webhook to add the "sales-ready" tag and move the opportunity to the Qualified stage. Test the integration end-to-end: a form submission triggers the SDR conversation, the SDR qualifies the lead, the webhook fires, and the pipeline updates automatically.
-
-**Deliverable:** Screenshot of contact record showing the "sales-ready" tag and pipeline stage updated by the agent, plus the webhook call log.
+This lab connects directly to the chapter's core theme: marketing is not about broadcasting to everyone, it is about speaking precisely to someone. In Google AI Studio, you will build an app that takes an ICP description as input and generates a complete, conversion-focused landing page — instantly.
 
 ---
 
-## AI Studio Build (Weekly): The Multimodal Campaign Generator
+### Step 1: Go to Google AI Studio
 
-**Capability Introduced:** Multimodal inputs and vision-grounded generation.
+Navigate to [aistudio.google.com](https://aistudio.google.com), sign in, and click **Build**.
 
-:::{figure} ../images/ch08-multimodal-campaign-generator.png
-:label: fig-ch08-multimodal-campaign-generator
-:alt: The Multimodal Campaign Generator app architecture showing image inputs, Gemini vision reasoning, and campaign asset outputs
-:width: 90%
-:align: center
+---
 
-The Multimodal Campaign Generator: brand visual inputs (logo, color palette, product photo) plus a target audience description feed into a Gemini-powered app that generates ad headlines, social captions, and image concept descriptions grounded in the uploaded visuals.
+### Step 2: Write the System Prompt
+
+Your app's job is to generate a landing page when given an ICP description. Write a system prompt that tells Gemini exactly what to produce.
+
+**Your system prompt must instruct the app to generate all of the following:**
+
+1. **Headline** — one punchy sentence that speaks directly to the ICP's biggest pain point
+2. **Subheadline** — one sentence that clarifies who this is for and what they get
+3. **Three benefit bullets** — specific outcomes, not features
+4. **Social proof line** — a believable testimonial or result (you may invent a plausible one for this exercise)
+5. **Call to action** — one clear next step (book a call, start a trial, download the guide, etc.)
+6. **Objection handler** — one sentence that preemptively addresses the most common reason someone would not convert
+
+**Example system prompt:**
+
+> *"You are a direct-response copywriter. When the user describes their Ideal Customer Profile, generate a complete landing page in this exact format: (1) Headline, (2) Subheadline, (3) Three benefit bullets starting with an action verb, (4) One social proof line attributed to a realistic persona, (5) One call-to-action button label with supporting microcopy, (6) One objection-handler line. Write in second person. Be specific — use numbers and outcomes wherever possible. Avoid buzzwords like 'innovative', 'seamless', or 'cutting-edge'."*
+
+Write your own system prompt using your venture's voice and context.
+
+---
+
+### Step 3: Test With Your ICP
+
+Once your system prompt is set, enter your ICP description from Chapter 3 as the user input. Review the output carefully.
+
+Then test it with **two variations** — slightly different ICP descriptions (e.g., a different industry segment, a different pain point emphasis, or a different company size). Compare the three outputs.
+
+---
+
+### Step 4: Refine and Share
+
+Revise your system prompt at least twice based on what the outputs get wrong. When satisfied, click **Share** and copy the link. Verify it works in an incognito window.
+
+---
+
+### Submission Checklist
+
+- [ ] AI Studio shareable link (accessible without login)
+- [ ] Your full system prompt (copy and paste it)
+- [ ] Your Chapter 3 ICP description (the input you used)
+- [ ] All three landing page outputs (original + two variations)
+- [ ] One-paragraph reflection: Which output was strongest and why? What did you have to change in your system prompt to improve the results?
+
+### Grading Rubric
+
+| Criterion | Points |
+|-----------|--------|
+| App is live and accessible via share link | 20 |
+| System prompt produces all six required landing page elements | 30 |
+| Three ICP variations tested and submitted | 25 |
+| Reflection identifies specific improvements made | 25 |
+| **Total** | **100** |
+
+:::{tip}
+**Copy Is a System**
+
+The best direct-response copy follows a repeatable structure: pain → promise → proof → CTA. When you encode that structure into a system prompt, you are building a reusable marketing asset — not just generating one piece of copy. That is the difference between vibe marketing and a vibe marketing *machine*.
 :::
 
-Build a Gemini-powered application in [Google AI Studio](https://aistudio.google.com) that accepts both visual and text inputs to generate a complete campaign asset set.
-
-### App Requirements
-
-**Inputs (all required):**
-- Brand logo image upload
-- Color palette reference image upload
-- Hero product or service photo upload
-- Target audience description (free-text field, 100+ words)
-- Campaign objective (awareness / lead generation / conversion)
-
-**Outputs (generated by Gemini reasoning over the visuals):**
-- Three distinct ad headlines (each under 60 characters)
-- Three social media captions (platform-matched: one for LinkedIn, one for Instagram, one for Twitter/X)
-- Concept descriptions for three image variants (detailed enough for a visual AI tool to generate them)
-
-**Key requirement:** The app must reference specific elements from the uploaded images in its output — color names, visual style descriptors, product attributes visible in the photo. An output that could have been generated without the images does not meet the requirement.
-
-### Build Steps
-
-1. Open [Google AI Studio](https://aistudio.google.com) and create a new prompt.
-2. Set the model to Gemini (no specific version required; use the most capable available).
-3. In the system prompt, define the assistant's role: a senior creative director with deep expertise in direct response marketing and visual brand identity.
-4. Configure the prompt to accept image inputs alongside the text description.
-5. Write a meta-prompt that instructs the model to (a) analyze the visual inputs first, (b) extract brand personality signals from the logo and color palette, (c) identify the key visual selling attributes of the product photo, and then (d) generate the output campaign assets grounded in those observations.
-6. Test with your own brand assets from Chapter 2/3 work.
-7. Export the share link for your configured prompt.
-
-### Deliverables
-
-1. **AI Studio share link** — the configured prompt accessible to the instructor.
-2. **Campaign assets that went live** — the three headlines, three captions, and image concepts you generated and actually deployed in your GHL campaign (Task 3 nurture sequence or a paid/organic social post). Include screenshots showing the content live in GHL or your social platform of choice.
+:::{seealso}
+**Chapter 8 NotebookLM Resource:** [notebooklm.google.com/notebook/0c144708-1215-4c1d-81e0-c2c9ee33fa85](https://notebooklm.google.com/notebook/0c144708-1215-4c1d-81e0-c2c9ee33fa85)
+:::
 
 ---
 

@@ -508,72 +508,88 @@ This module teaches you to build and deploy AI agents. Take that power seriously
 
 ---
 
-## Lab 7: Hire a Synthetic Employee
+## Lab 7: Build a Synthetic Employee in Google AI Studio
 
-:::{important}
-**A Note on Prompting: Meta-Prompting Is Required**
+**Deliverable:** A shareable link to a working AI Studio app that acts as a synthetic employee for your venture — no coding required.
 
-The prompts below are starter prompts only. Use meta-prompting — ask Claude or Gemini to expand your starter prompt into a thorough 2–3 paragraph prompt — before submitting any task. A one-line prompt will not produce output that meets the standard for this lab. Every task submission must include the full expanded prompt you used.
-:::
-
-### Overview
-
-You will deploy a functioning synthetic employee that does real work in the venture you have been developing across Chapters 5 and 6. This is not a design exercise — the agent must run, take actions, and produce logged output during the week between sessions.
-
-### Lab Tasks
-
-**Task 1: Write the Job Description (20 points)**
-
-Choose a role from the five in Section 7.5, or propose a role specific to your venture. Write a complete job description using the template from Section 7.4 Step 1. Include: role title, outcome statement, success metrics, scope boundary (what is explicitly out of scope), and the first three escalation triggers.
-
-*Starter prompt:* "Help me write a job description for a synthetic [role] for my [venture type] business."
-
-**Task 2: Build the Runbook (25 points)**
-
-Write a runbook for one complete workflow the agent will handle. The runbook must specify trigger conditions, classification logic (with examples), at least two branches, output format requirements, and error handling. Minimum length: 500 words. The runbook becomes your agent's system prompt.
-
-*Starter prompt:* "Help me write a detailed runbook for a synthetic [role] that handles [specific workflow]."
-
-**Task 3: Deploy and Log (30 points)**
-
-Deploy the agent using a framework of your choice (Claude with MCP, OpenAI Assistants API, LangChain, LangGraph, n8n, or similar). Run it for at least one week on real inputs from your venture. Submit a log of all actions taken — each entry should include: timestamp, input received, action taken, output produced, and human review outcome (accepted / modified / rejected).
-
-Minimum: 10 logged actions. The log may be submitted as a spreadsheet or structured document.
-
-**Task 4: Honest Evaluation (25 points)**
-
-Write a 400-word evaluation of your synthetic employee's first week. Address: What did it do well? What did it fail at? What would you change in the runbook? Would you continue running it? Why or why not?
-
-This is not a marketing document for your agent. Honest analysis of failure modes earns more points than inflated success claims.
+This lab brings the chapter's core idea to life: a synthetic employee is just a well-defined role, a clear scope, and a reliable set of instructions. In Google AI Studio, you will define that role, write the instructions, and publish an app that anyone on your team could hand a task to.
 
 ---
 
-## AI Studio Build (Weekly): The Function-Calling Agent
+### Step 1: Choose Your Synthetic Role
 
-**Capability introduced:** Function calling and tool use.
+Look back at your venture idea from Chapters 3 and 5. Pick **one role** your business needs but that does not require a full-time human hire right now. Examples:
 
-In Google AI Studio, build a Gemini-based agent with at least three declared function-calling tools. Suggested tools:
+- **Intake Specialist** — screens incoming client inquiries and summarizes the key details
+- **Content Assistant** — drafts social media posts or email copy from a bullet-point brief
+- **Customer FAQ Agent** — answers common questions about your product or service
+- **Research Analyst** — summarizes competitor news or market updates on demand
+- **Proposal Writer** — drafts a first-pass proposal based on a client brief
 
-- `web_search(query: string)` — searches the web for current information
-- `calendar_lookup(date_range: string)` — returns available calendar slots
-- `email_draft(to: string, subject: string, body: string)` — creates a draft email
+Your role must make sense for your specific venture. Do not pick generically — tie it to your ICP and value proposition from earlier chapters.
 
-The agent must:
-1. Receive a real task from your venture (example: "Research our top three competitors and draft a comparison email for our CEO's review")
-2. Plan the tool call sequence
-3. Execute the tools in sequence, using each output to inform the next call
-4. Return a synthesized final result
+---
 
-:::{figure} ../images/ch07-function-calling-trace.png
-:label: fig-ch07-function-trace
-:alt: Function calling trace showing sequential tool calls and synthesis
-:width: 90%
-:align: center
+### Step 2: Write the System Prompt (The Job Description)
 
-A function-calling trace showing the agent's reasoning between tool calls. The output of each tool call informs the next decision. Submit this full trace — not just the final output.
+Navigate to [aistudio.google.com](https://aistudio.google.com), click **Build**, and start a new app.
+
+The system prompt is where you define who your synthetic employee is. It must include:
+
+1. **Role title and one-sentence purpose** — what this agent does and why it exists
+2. **Tone and voice** — how it communicates (formal, friendly, concise, etc.)
+3. **Scope** — what it will and will not do (boundaries matter)
+4. **Output format** — exactly how it should structure its responses
+
+**Example system prompt:**
+
+> *"You are the Intake Specialist for Meridian Legal Consulting. Your job is to screen new client inquiry messages and return a structured summary. Always respond in this format: (1) Client name and contact info, (2) Nature of the legal issue in one sentence, (3) Urgency level — High, Medium, or Low — with a one-line justification, (4) Recommended next step. Do not give legal advice. Do not make promises about timelines or outcomes. If the inquiry is unclear, ask one clarifying question before summarizing."*
+
+Write your own system prompt — do not copy this one.
+
+---
+
+### Step 3: Test Your Agent
+
+Once your system prompt is in place, test it with **at least three realistic inputs** — the kind of tasks this employee would actually receive in your business.
+
+For each test:
+- Paste in a realistic task or message
+- Review the output
+- Refine your system prompt if the output is off
+
+Iteration is expected. A first draft system prompt almost never produces perfect output.
+
+---
+
+### Step 4: Share Your App
+
+Click **Share** in AI Studio and copy the shareable link. Test it in an incognito window to confirm it works without a Google login.
+
+---
+
+### Submission Checklist
+
+- [ ] AI Studio shareable link (accessible without login)
+- [ ] Your full system prompt (copy and paste it)
+- [ ] Three sample inputs you used for testing, with the agent's outputs
+- [ ] One-paragraph reflection: What role did you choose and why? What did you have to refine in your system prompt to get useful output?
+
+### Grading Rubric
+
+| Criterion | Points |
+|-----------|--------|
+| App is live and accessible via share link | 20 |
+| System prompt defines role, tone, scope, and output format | 30 |
+| Three test inputs and outputs submitted | 25 |
+| Role clearly connects to your venture | 25 |
+| **Total** | **100** |
+
+:::{tip}
+**The System Prompt Is the Job Description**
+
+Every instruction you write is a management decision. Vague instructions produce vague employees — human or synthetic. The discipline of writing a tight system prompt is the same discipline as writing a tight job description: you have to know what you want before you can hire for it.
 :::
-
-**Submit:** The full trace of all tool calls (inputs, outputs, and the agent's reasoning between calls) plus the final synthesized output. The trace must show at least three tool calls. A single-tool submission will not receive full credit.
 
 :::{seealso}
 **Chapter 7 NotebookLM Resource:** [notebooklm.google.com/notebook/0c144708-1215-4c1d-81e0-c2c9ee33fa85](https://notebooklm.google.com/notebook/0c144708-1215-4c1d-81e0-c2c9ee33fa85)
