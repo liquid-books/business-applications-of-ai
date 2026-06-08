@@ -464,79 +464,90 @@ What will you build? For whom? Toward what end? The Imago Dei does not just cele
 
 ---
 
-## Lab 6: Ship Your MVP
+## Lab 6: Build Your First App in Google AI Studio
 
-**Deliverable:** A live, deployed URL for the product you pitched in Chapter 5.
+**Deliverable:** A shareable link to a working AI-powered application you built and prompted entirely inside [Google AI Studio](https://aistudio.google.com/app/build) — no coding required.
 
-:::{important}
-**A Note on Prompting: Meta-Prompting Is Required**
+This lab connects directly to the chapter's central idea: vibe coding is about describing what you want and iterating until it works. AI Studio's Build feature lets you experience that loop in the simplest possible environment — a browser, a text box, and a live preview.
 
-The prompts below are starter prompts only. Use meta-prompting (ask Claude or Gemini to expand into a thorough 2–3 paragraph prompt) before submitting any task. A one-liner will not pass.
-:::
+---
 
-### Requirements
+### Step 1: Go to Google AI Studio
 
-Your deployed MVP must include all of the following:
+Navigate to [aistudio.google.com](https://aistudio.google.com) and sign in with your Google account. Click **Build** in the left sidebar.
 
-1. **Authentication** — users can sign up, log in, and log out. User data is isolated per account.
-2. **Database** — at least one data entity that belongs to a user and persists across sessions.
-3. **Transaction flow** — at least one action that creates, modifies, or deletes a database record through the UI (not just a read).
-4. **Basic analytics** — PostHog (or equivalent) installed and capturing at least one custom event.
-5. **Reproducible from README** — a collaborator should be able to clone the repository, follow the README, and run the application locally without asking you for help.
+You will see a prompt box and a live preview panel. Whatever you describe, Gemini builds it in real time.
+
+---
+
+### Step 2: Describe Your App
+
+Think about the venture idea you have been developing throughout this course. Now describe a simple, single-purpose tool that your ideal customer would actually use.
+
+**Your prompt must do three things:**
+
+1. State what the app does in one sentence
+2. Describe who it is for
+3. Give at least one specific example of how it works
+
+**Example prompt:**
+
+> *"Build a simple tool for a freelance consultant who wants to quickly estimate their project fee. The user enters the number of hours, their hourly rate, and a contingency percentage. The app instantly shows a total fee and a formatted quote summary they can copy and paste into an email."*
+
+Write your own prompt — do not copy this one. It must reflect your venture from Chapter 3 and Chapter 5.
+
+---
+
+### Step 3: Iterate
+
+Your first output will not be perfect. That is the point.
+
+Make at least **three prompted revisions** to improve your app. Examples of things to refine:
+
+- Change the layout or color scheme
+- Add a new input field or output section
+- Make the language match your brand voice from Chapter 2
+- Add a helpful instruction or tooltip for the user
+
+Each revision should be a new prompt describing exactly what you want changed. Keep your prompts specific.
+
+---
+
+### Step 4: Share Your App
+
+When you are satisfied with your app, click the **Share** button in AI Studio and copy the shareable link. Confirm the link opens correctly in an incognito window before submitting.
+
+---
 
 ### Submission Checklist
 
-- [ ] Live URL (must be accessible without any credentials from grader)
-- [ ] GitHub repository URL (public or with grader access granted)
-- [ ] One-paragraph explanation of the one feature you cut from scope to ship on time, and why you cut it
-- [ ] Screenshot of PostHog dashboard showing at least one recorded event
+- [ ] AI Studio shareable link (must open without a Google login)
+- [ ] The original prompt you used to create the app (copy and paste it)
+- [ ] A one-paragraph reflection: What worked on the first try? What required iteration? What would you change if you had more time?
 
 ### Grading Rubric
 
 | Criterion | Points |
 |-----------|--------|
-| Live URL accessible and functional | 20 |
-| Auth working (sign up, login, logout) | 20 |
-| Database persistence confirmed | 20 |
-| Transaction flow functional | 20 |
-| Analytics capturing data | 10 |
-| README enables local reproduction | 10 |
+| App is live and accessible via share link | 25 |
+| App clearly relates to your venture idea | 25 |
+| Evidence of at least three iterations (described in reflection) | 25 |
+| Reflection is specific and honest | 25 |
 | **Total** | **100** |
 
----
+:::{tip}
+**The Prompt Is the Skill**
 
-## AI Studio Build (Weekly): The Parallel Prototype
-
-Using [Google AI Studio](https://aistudio.google.com/app/build)'s Build feature, rebuild one key screen or feature of your Chapter 6 MVP as a Gemini-powered shareable application.
-
-The goal is not to replace your MVP. The goal is to produce a side-by-side comparison that answers a real product question: **which tool was faster for which task?**
-
-:::{figure} ../images/ch06-parallel-prototype-comparison.png
-:label: fig-ch06-parallel-prototype
-:alt: Side-by-side comparison of AI Studio vs Claude Code vs Antigravity for parallel prototype builds
-:width: 90%
-:align: center
-
-The parallel prototype comparison framework. Each column represents a tool; each row represents a task type. Faster is relative — the goal is calibrated judgment, not a winner.
+The code Gemini writes is invisible to you. What is visible — and what you are being graded on — is your ability to describe what you want clearly enough for an AI to build it. That skill transfers directly to working with any AI coding tool, any agent, and any technical collaborator.
 :::
-
-### Deliverables
-
-1. **AI Studio Share Link** — your rebuilt screen/feature as a shareable AI Studio app
-2. **One-page tool-choice analysis** — structured as follows:
-   - What you built in each tool (one sentence per tool)
-   - Time to first working output in each tool
-   - Quality of first output (1–5 scale, with justification)
-   - Which tool you would use for this task in a production context, and why
-   - One thing each tool does that the others cannot
-
-**Capability introduced:** comparative prototyping and deliberate tool selection. The professional vibe coder does not have a single favorite tool — they have a calibrated matrix of tool-to-task fit that they refine with every build.
 
 :::{seealso}
 **Chapter 6 NotebookLM Resource:** [notebooklm.google.com/notebook/0c144708-1215-4c1d-81e0-c2c9ee33fa85](https://notebooklm.google.com/notebook/0c144708-1215-4c1d-81e0-c2c9ee33fa85)
 :::
 
 ---
+
+## Discussion Prompts---
 
 ## Discussion Prompts
 
